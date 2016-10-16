@@ -1,0 +1,4 @@
+cd "/home/ftpuser1/src"
+put "./processedFiles/b.txt.pgp"
+ls 
+quit

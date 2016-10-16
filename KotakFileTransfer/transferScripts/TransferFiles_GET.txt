@@ -1,0 +1,4 @@
+cd "temp"
+lcd "./downloadedFilesToDecrypt1"
+mget *.*
+quit

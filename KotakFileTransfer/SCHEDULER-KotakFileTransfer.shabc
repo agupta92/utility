@@ -1,0 +1,22 @@
+#!/bin/bash
+# EncryptionService.sh
+
+echo "---> KMBL Utility started at " $(date)
+
+LIB_PATH=./lib/
+CLASS_NAME=com.serviceClient.KotakFileTransfer
+
+SCRIPT_CLASSPATH=${LIB_PATH}
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}slf4j-api-1.5.10.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}slf4j-log4j12-1.5.10.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}mime-util-2.1.2.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}log4j-1.2.15.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}bcpg-jdk14-143.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}bcprov-jdk14-143.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}mail.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}activation.jar
+SCRIPT_CLASSPATH=${SCRIPT_CLASSPATH}:${LIB_PATH}KotakFileTransfer.jar
+
+java -cp ${SCRIPT_CLASSPATH} ${CLASS_NAME} "./conf" "Endless" "All" "" &
+
+exit 0

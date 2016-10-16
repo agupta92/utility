@@ -1,0 +1,7 @@
+cd "temp"
+rm "a.txt.pgp"
+rm "b.txt"
+rm "b.txt.pgp"
+rm "Ca.txt.pgp"
+rm "Db.txt.pgp"
+quit

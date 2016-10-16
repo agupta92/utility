@@ -1,0 +1,14 @@
+@echo off
+
+set KOTAK_LIB=./lib/
+
+set CLASSPATH=%KOTAK_LIB%slf4j-api-1.5.10.jar;%KOTAK_LIB%slf4j-log4j12-1.5.10.jar;%KOTAK_LIB%mime-util-2.1.2.jar;%KOTAK_LIB%log4j-1.2.15.jar;%KOTAK_LIB%bcpg-jdk14-143.jar;%KOTAK_LIB%bcprov-jdk14-143.jar;%KOTAK_LIB%mail.jar;%KOTAK_LIB%activation.jar;%KOTAK_LIB%KotakFileTransfer.jar  
+
+echo KMBL Utility started at %date% %time%
+
+C:/Java/jre6/bin/java -classpath %CLASSPATH% com.serviceClient.KotakFileTransfer "./conf" "ENDLESS" "All" ""
+
+pause
+
+
+
